@@ -16,7 +16,7 @@ $last_array
 Sample
 
 format of columns of SQ
-'employee_id','employee_name','email','project_id','project_name','date_of_creation','department','coworkers','coworkers_name','coworkers_role'
+'employee_id','employee_name','email','project_id','project_name','date_of_creation','department','coworker_indx','coworkers_name','coworkers_role'
 
 and we need to get following structure of array
 {
@@ -28,7 +28,7 @@ and we need to get following structure of array
         "project_name": "project_name1",
         "date_of_creation": "date_of_creation1",
         "department": "department1",
-        "coworkers": [
+        "coworker_indx": [
           {
             "coworkers_name": "coworkers_name1",
             "coworkers_role": "coworkers_role1"
@@ -47,7 +47,7 @@ $Rule=Array(
          ),
          Array(
                   'par'=>Array('project_name','date_of_creation','department'),
-                  'arr'=>'coworkers'
+                  'arr'=>'coworker_indx'
          )
 )
 and run the function with following  params:
