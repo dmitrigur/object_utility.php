@@ -20,7 +20,7 @@ format of columns of SQ
 
 and we need to get following structure of array
 {
-  "employee1": {
+  "employee_id1": {
     "employee_name": "employee_name1",
     "email": "email1",
     "project": {
