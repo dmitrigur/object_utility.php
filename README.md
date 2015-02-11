@@ -47,7 +47,7 @@ $Rule=Array(
                   'arr'=>'coworkers_id'
          )
 )
-and ran the function with following  params:
+and run the function with following  params:
 
 pdo_select_tree_object($db_link2 ,$sql_str,$placeholders,$Rule) function returns built array with above configuration.
 
