@@ -20,24 +20,23 @@ format of columns of SQ
 
 and we need to get following structure of array
 {
-           'employee_id1': { 
-                            employee_name:'employee_name1',
-                            email:'email1',
-                            project_id: {
-                                        'project_id1':
-                                                      {
-                                                         project_name:'project_name1',
-                                                         date_of_creation:'date_of_creation1',
-                                                         department:'department1',
-                                                         coworkers_id: [
-                                                                         1:{
-                                                                              coworkers_name:'coworkers_name1',
-                                                                              coworkers_role:'coworkers_role1'
-                                                                           },
-                                                                       ]
-                                                       }
-                                         }
-                            }
+  "employee1": {
+    "employee_name": "employee_name1",
+    "email": "email1",
+    "project": {
+      "project_id1": {
+        "project_name": "project_name1",
+        "date_of_creation": "date_of_creation1",
+        "department": "department1",
+        "coworkers_id": [
+          {
+            "coworkers_name": "coworkers_name1",
+            "coworkers_role": "coworkers_role1"
+          }
+        ]
+      }
+    }
+  }
 }
 For this case we need to create following ruling array:                         
 $Rule=Array(
